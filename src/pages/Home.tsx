@@ -1,0 +1,87 @@
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+
+const Home = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+    exit: {
+      opacity: 0,
+      transition: { duration: 0.5 },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.5 },
+    },
+  };
+
+  return (
+    <motion.div
+      className="min-h-screen pt-32 md:pt-24 flex items-center bg-gradient-to-br from-indigo-50 via-white to-teal-50"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
+      <div className="container-custom">
+        <motion.div
+          variants={itemVariants}
+          className="text-center max-w-3xl mx-auto"
+        >
+          <div className="flex justify-center mb-6">
+            <img
+              src="/Image/Home.jpg"
+              alt="Mohammed Tharik - Web Developer"
+              className="w-64 h-64 rounded-full object-cover border-4 border-indigo-200 shadow-lg"
+            />
+          </div>
+          <motion.p
+            variants={itemVariants}
+            className="text-lg text-indigo-600 font-medium mb-4"
+          >
+            Hello, I'm
+          </motion.p>
+          <motion.h1
+            variants={itemVariants}
+            className="font-bold mb-6 gradient-text"
+          >
+            Mohammed Tharik
+          </motion.h1>
+          <motion.p
+            variants={itemVariants}
+            className="text-xl md:text-2xl text-gray-700 mb-8"
+          >
+            Passionate Web Developer | Crafting Elegant Interfaces & Scalable
+            Backends
+          </motion.p>
+          <motion.div
+            variants={itemVariants}
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-5"
+          >
+            <Link to="/projects" className="btn btn-primary">
+              View My Work
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+            <Link to="/contact" className="btn btn-outline">
+              Get In Touch
+            </Link>
+          </motion.div>
+        </motion.div>
+      </div>
+    </motion.div>
+  );
+};
+
+export default Home;
