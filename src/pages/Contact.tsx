@@ -213,7 +213,7 @@ const Contact = () => {
                 <div>
                   <h4 className="text-lg font-semibold">LinkedIn</h4>
                   <a
-                    href="https://linkedin.com/in/mohammed-tharik"
+                    href="https://www.linkedin.com/in/mohammed-tharik-7846701ab/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-600 hover:text-indigo-600 transition-colors"
