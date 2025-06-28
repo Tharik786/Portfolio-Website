@@ -63,7 +63,8 @@ const Home = () => {
             variants={itemVariants}
             className="text-xl md:text-2xl text-gray-700 mb-8"
           >
-            Passionate Web Developer | Crafting Elegant Interfaces & Scalable Backends
+            Passionate Web Developer | Crafting Elegant Interfaces & Scalable
+            Backends
           </motion.p>
           <motion.div
             variants={itemVariants}
