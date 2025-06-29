@@ -79,7 +79,7 @@ const Home = () => {
             </Link>
             <Link
               to="/skills"
-              className="btn btn-outline flex items-center justify-center"
+              className="btn btn-primary flex items-center justify-center"
             >
               <Code className="mr-2 h-5 w-5" />
               TechStack
