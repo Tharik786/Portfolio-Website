@@ -150,7 +150,7 @@ const Contact = () => {
 
   return (
     <motion.div
-      className="pt-20 pb-16 bg-gradient-to-br from-indigo-50 via-white to-teal-50"
+      className="pt-20 pb-16 bg-gradient-to-br from-indigo-50 via-white to-teal-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -158,16 +158,20 @@ const Contact = () => {
     >
       <div className="container-custom">
         <motion.div variants={itemVariants} className="mb-16 text-center">
-          <h1 className="section-title">Contact Me</h1>
+          <h1 className="section-title text-gray-900 dark:text-white">
+            Contact Me
+          </h1>
           <div className="w-20 h-1 bg-indigo-600 mx-auto mb-8"></div>
-          <p className="section-subtitle">
+          <p className="section-subtitle text-gray-600 dark:text-gray-400">
             Have a question or want to work together? Feel free to reach out!
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <motion.div variants={itemVariants}>
-            <h3 className="text-2xl font-bold mb-6">Get In Touch</h3>
+            <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
+              Get In Touch
+            </h3>
             <p className="text-gray-600 dark:text-gray-400 mb-8">
               I'm always open to discussing new projects, creative ideas or
               opportunities to be part of your vision.
@@ -175,14 +179,16 @@ const Contact = () => {
 
             <div className="space-y-6">
               <div className="flex items-center">
-                <div className="h-12 w-12 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mr-4">
+                <div className="h-12 w-12 bg-indigo-100 dark:bg-indigo-900 rounded-full flex items-center justify-center text-indigo-600 dark:text-indigo-400 mr-4">
                   <Mail className="h-6 w-6" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold">Email</h4>
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
+                    Email
+                  </h4>
                   <a
                     href="mailto:tharik.official007@gmail.com"
-                    className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 transition-colors"
+                    className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
                   >
                     tharik.official007@gmail.com
                   </a>
@@ -190,16 +196,18 @@ const Contact = () => {
               </div>
 
               <div className="flex items-center">
-                <div className="h-12 w-12 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mr-4">
+                <div className="h-12 w-12 bg-indigo-100 dark:bg-indigo-900 rounded-full flex items-center justify-center text-indigo-600 dark:text-indigo-400 mr-4">
                   <Github className="h-6 w-6" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold">GitHub</h4>
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
+                    GitHub
+                  </h4>
                   <a
                     href="https://github.com/Tharik786"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 transition-colors"
+                    className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
                   >
                     Tharik786
                   </a>
@@ -207,16 +215,18 @@ const Contact = () => {
               </div>
 
               <div className="flex items-center">
-                <div className="h-12 w-12 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mr-4">
+                <div className="h-12 w-12 bg-indigo-100 dark:bg-indigo-900 rounded-full flex items-center justify-center text-indigo-600 dark:text-indigo-400 mr-4">
                   <Linkedin className="h-6 w-6" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold">LinkedIn</h4>
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
+                    LinkedIn
+                  </h4>
                   <a
                     href="https://www.linkedin.com/in/mohammed-tharik-7846701ab/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 transition-colors"
+                    className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
                   >
                     Mohammed Tharik
                   </a>
@@ -224,14 +234,16 @@ const Contact = () => {
               </div>
 
               <div className="flex items-center">
-                <div className="h-12 w-12 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mr-4">
+                <div className="h-12 w-12 bg-indigo-100 dark:bg-indigo-900 rounded-full flex items-center justify-center text-indigo-600 dark:text-indigo-400 mr-4">
                   <FileText className="h-6 w-6" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold">Resume</h4>
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
+                    Resume
+                  </h4>
                   <button
                     onClick={handleDownloadResume}
-                    className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 transition-colors inline-flex items-center"
+                    className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors inline-flex items-center"
                   >
                     <Download className="h-4 w-4 mr-1" />
                     Download Resume
@@ -242,15 +254,17 @@ const Contact = () => {
           </motion.div>
 
           <motion.div variants={itemVariants}>
-            <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-8">
-              <h3 className="text-2xl font-bold mb-6">Send Me a Message</h3>
+            <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-8 border border-gray-200 dark:border-gray-700">
+              <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
+                Send Me a Message
+              </h3>
 
               {formStatus.submitted && (
                 <div
                   className={`mb-6 p-4 rounded-lg flex items-start ${
                     formStatus.success
-                      ? "bg-green-50 text-green-700 border border-green-200"
-                      : "bg-red-50 text-red-700 border border-red-200"
+                      ? "bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 border border-green-200 dark:border-green-800"
+                      : "bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-400 border border-red-200 dark:border-red-800"
                   }`}
                 >
                   {formStatus.success ? (
@@ -272,7 +286,7 @@ const Contact = () => {
                   </label>
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                      <User className="h-5 w-5 text-gray-400" />
+                      <User className="h-5 w-5 text-gray-400 dark:text-gray-500" />
                     </div>
                     <input
                       type="text"
@@ -297,7 +311,7 @@ const Contact = () => {
                   </label>
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                      <Mail className="h-5 w-5 text-gray-400" />
+                      <Mail className="h-5 w-5 text-gray-400 dark:text-gray-500" />
                     </div>
                     <input
                       type="email"
@@ -322,7 +336,7 @@ const Contact = () => {
                   </label>
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                      <MessageSquare className="h-5 w-5 text-gray-400" />
+                      <MessageSquare className="h-5 w-5 text-gray-400 dark:text-gray-500" />
                     </div>
                     <input
                       type="text"
@@ -377,12 +391,12 @@ const Contact = () => {
                 </button>
               </form>
 
-              <div className="mt-6 pt-6 border-t border-gray-200">
+              <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
                 <p className="text-sm text-gray-600 dark:text-gray-400 text-center">
                   You can also reach me directly at{" "}
                   <a
                     href="mailto:tharik.official007@gmail.com"
-                    className="text-indigo-600 hover:text-indigo-800 font-medium"
+                    className="text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 font-medium"
                   >
                     tharik.official007@gmail.com
                   </a>
