@@ -88,7 +88,7 @@ const Skills = () => {
 
   return (
     <motion.div
-      className="pt-20 pb-16 bg-gradient-to-br from-indigo-50 via-white to-teal-50"
+      className="pt-20 pb-16 bg-gradient-to-br from-indigo-50 via-white to-teal-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -96,9 +96,9 @@ const Skills = () => {
     >
       <div className="container-custom">
         <motion.div variants={itemVariants} className="mb-16 text-center">
-          <h1 className="section-title">TechStack</h1>
+          <h1 className="section-title text-gray-900 dark:text-white">TechStack</h1>
           <div className="w-20 h-1 bg-indigo-600 mx-auto mb-8"></div>
-          <p className="section-subtitle">
+          <p className="section-subtitle text-gray-600 dark:text-gray-400">
             These are the technologies and tools I work with to create amazing web experiences
           </p>
         </motion.div>
@@ -108,13 +108,13 @@ const Skills = () => {
             <motion.div 
               key={index}
               variants={itemVariants}
-              className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-8"
+              className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-8 border border-gray-200 dark:border-gray-700"
               whileHover={{ y: -5 }}
               transition={{ duration: 0.3 }}
             >
               <div className="flex items-center mb-6">
                 {category.icon}
-                <h3 className="text-2xl font-bold ml-4">{category.category}</h3>
+                <h3 className="text-2xl font-bold ml-4 text-gray-900 dark:text-white">{category.category}</h3>
               </div>
               
               {category.items.map((skill, idx) => (
@@ -126,9 +126,9 @@ const Skills = () => {
 
         <motion.div 
           variants={itemVariants}
-          className="mt-20 bg-white dark:bg-gray-800 rounded-xl shadow-md p-8"
+          className="mt-20 bg-white dark:bg-gray-800 rounded-xl shadow-md p-8 border border-gray-200 dark:border-gray-700"
         >
-          <h3 className="text-2xl font-bold mb-8 text-center">Tools & Technologies</h3>
+          <h3 className="text-2xl font-bold mb-8 text-center text-gray-900 dark:text-white">Tools & Technologies</h3>
           
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
             {[
@@ -145,7 +145,7 @@ const Skills = () => {
             ].map((tool, idx) => (
               <motion.div
                 key={idx}
-                className="flex flex-col items-center justify-center p-4 rounded-lg bg-gray-50 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
+                className="flex flex-col items-center justify-center p-4 rounded-lg bg-gray-50 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors border border-gray-200 dark:border-gray-600"
                 whileHover={{ scale: 1.05 }}
               >
                 <div className="h-16 w-16 flex items-center justify-center mb-3">
@@ -154,7 +154,7 @@ const Skills = () => {
                     {tool.name.charAt(0)}
                   </div>
                 </div>
-                <p className="text-center font-medium">{tool.name}</p>
+                <p className="text-center font-medium text-gray-900 dark:text-white">{tool.name}</p>
               </motion.div>
             ))}
           </div>
