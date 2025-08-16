@@ -33,7 +33,7 @@ const Footer = () => {
                 <Github size={20} />
               </a>
               <a
-                href="https://www.linkedin.com/in/mohammed-tharik-7846701ab/"
+                href="https://www.linkedin.com/in/mohdtharik"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 dark:text-gray-500 hover:text-white transition-colors"
@@ -125,7 +125,7 @@ const Footer = () => {
               <li className="flex items-center gap-2">
                 <Linkedin size={16} />
                 <a
-                  href="https://www.linkedin.com/in/mohammed-tharik-7846701ab/"
+                  href="https://www.linkedin.com/in/mohdtharik"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white dark:text-gray-500 transition-colors"
