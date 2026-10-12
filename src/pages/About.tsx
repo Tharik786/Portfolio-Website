@@ -81,20 +81,13 @@ const About = () => {
             <h2 className="text-3xl font-bold mb-6 gradient-text">
               Mohammed Tharik
             </h2>
-            <h3 className="text-xl text-gray-700 dark:text-gray-300 mb-6">Web Developer</h3>
+            <h3 className="text-xl text-gray-700 dark:text-gray-300 mb-6">AI-Native FullStack Developer</h3>
             <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-              I am a passionate Web Developer with a strong focus on building
-              modern, responsive web applications. With hands on experience in
-              both frontend and backend technologies, I specialize in crafting
-              user interfaces and robust server-side solutions.
+           I am an AI-Native Full-Stack Developer focused on building modern web and mobile applications using AI-powered development tools and workflows. I leverage AI for coding, debugging, application development, and problem-solving to build efficient and maintainable software solutions.
             </p>
             <p className="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
-              My Techstack includes HTML, CSS, JavaScript, Bootstrap, and
-              ReactJS for frontend development. On the backend, I work with
-              Python and MySQL to develop scalable systems and manage data
-              efficiently. This full-stack capability enables me to deliver
-              comprehensive web solutions that align with business goals and
-              exceed user expectations.
+              My technical stack includes React, TypeScript, JavaScript, HTML, CSS, and Tailwind CSS for frontend development, along with Python, Django, Flask, REST APIs, and ClickHouse for backend development and data management. I also work with Git, Linux, and deployment tools to develop, test, and deploy applications.
+              I am passionate about combining software engineering with AI-driven workflows to deliver practical, scalable, and user-focused applications.
             </p>
             <button
               onClick={handleDownloadResume}
