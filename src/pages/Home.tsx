@@ -63,8 +63,7 @@ const Home = () => {
             variants={itemVariants}
             className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-8"
           >
-            Passionate Web Developer | Crafting Elegant Interfaces & Scalable
-            Backends
+AI-Native FullStack Developer | Building Intelligent Web & Mobile Applications
           </motion.p>
           <motion.div
             variants={itemVariants}
