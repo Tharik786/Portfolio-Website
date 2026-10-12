@@ -20,7 +20,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold text-white mb-4">Mohammed Tharik</h3>
             <p className="mb-4 text-gray-400 dark:text-gray-500">
-              Passionate Web Developer | Crafting Elegant Interfaces & Scalable Backends
+    AI-Native FullStack Developer | Building Intelligent Web & Mobile Applications
             </p>
             <div className="flex space-x-4">
               <a
