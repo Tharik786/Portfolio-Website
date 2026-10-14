@@ -10,8 +10,10 @@ const skills = [
       { name: 'HTML', level: 90 },
       { name: 'CSS', level: 85 },
       { name: 'JavaScript', level: 80 },
-      { name: 'Bootstrap', level: 85 },
+      { name: 'Tailwind CSS', level: 70 },
       { name: 'ReactJS', level: 80 },
+      { name: 'Ionic', level: 75 },
+      { name: 'Angular', level: 75 },
     ],
   },
   {
@@ -19,6 +21,8 @@ const skills = [
     icon: <Code className="h-12 w-12 text-indigo-500" />,
     items: [
       { name: 'Python', level: 85 },
+      { name: 'Java', level: 70 },
+
     ],
   },
   {
@@ -26,6 +30,10 @@ const skills = [
     icon: <Database className="h-12 w-12 text-indigo-500" />,
     items: [
       { name: 'MySQL', level: 85 },
+      {name: 'ClickHouse', level: 70 },
+      { name: 'PostgreSQL', level: 75 },
+      { name: 'Supabase', level: 50 },
+  
     ],
   },
 ];
@@ -138,10 +146,21 @@ const Skills = () => {
               { name: 'Bootstrap', icon: '/bootstrap.svg' },
               { name: 'ReactJS', icon: '/reactjs.svg' },
               { name: 'Python', icon: '/python.svg' },
+              { name: 'Java', icon: '/java.svg' },
+              { name: 'Ionic', icon: '/ionic.svg' },
               { name: 'MySQL', icon: '/mysql.svg' },
               { name: 'Git', icon: '/git.svg' },
               { name: 'VS Code', icon: '/vscode.svg' },
               { name: 'GitHub', icon: '/github.svg' },
+              { name: 'Tailwind CSS', icon: '/tailwind.svg' },
+              { name: 'ClickHouse', icon: '/clickhouse.svg' },
+              { name: 'PostgreSQL', icon: '/postgresql.svg' },
+              { name: 'Supabase', icon: '/supabase.svg' },
+              { name: 'Angular', icon: '/angular.svg' },
+              {name : 'Docker', icon: '/docker.svg'},
+              {name : 'Postman', icon: '/postman.svg'},
+              {name : 'Playwright', icon: '/playwright.svg'},
+
             ].map((tool, idx) => (
               <motion.div
                 key={idx}
